@@ -10,8 +10,12 @@ namespace Version.Plugin
         {
             try
             {
-                return Application.Context.PackageManager.GetPackageInfo(
+                var appVersionName = Application.Context.PackageManager.GetPackageInfo(
                     Application.Context.PackageName, PackageInfoFlags.MetaData).VersionName;
+                var appVersionCode = Application.Context.PackageManager.GetPackageInfo(
+                    Application.Context.PackageName, PackageInfoFlags.MetaData).VersionCode;
+                
+                return String.Format("{0}.{1}", appVersionName, appVersionCode);
             }
             catch
             {
