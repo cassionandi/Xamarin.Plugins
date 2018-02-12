@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
-       <id>Xam.Plugin.Version</id>
+       <id>Xam.Plugin.Version.Fork</id>
        <version>1.0.0.0</version>
        <title>App Version Plugin for Xamarin and Windows</title>
-       <authors>Mark Trinder</authors>
-       <owners>Mark Trinder</owners>
-       <licenseUrl>https://github.com/mtrinder/Xamarin.Plugins/blob/master/LICENSE</licenseUrl>
-       <projectUrl>https://github.com/mtrinder/Xamarin.Plugins/tree/master/Version</projectUrl>
+       <authors>Cássio Nandi Citadin</authors>
+       <owners>Cássio Nandi Citadin</owners>
+       <licenseUrl>https://github.com/cassionandi/Xamarin.Plugins/blob/master/LICENSE</licenseUrl>
+       <projectUrl>https://github.com/cassionandi/Xamarin.Plugins/tree/master/Version</projectUrl>
      <!--Default Icon, a template can be found:  https://raw.githubusercontent.com/jamesmontemagno/Xamarin-Templates/master/Plugins-Templates/icons/plugin_icon.png-->  
      <iconUrl>https://raw.githubusercontent.com/jamesmontemagno/Xamarin-Templates/master/Plugins-Templates/icons/plugin_icon_nuget.png</iconUrl>
      
        <requireLicenseAcceptance>false</requireLicenseAcceptance>
        <description>
-         A cross-platform way of getting your app version.
+         Forked from MTrinder. 
+         
+         A cross-platform way of getting your app version. With versionCode for Android and support only for iOS, Android and Forms.
          
          Use: CrossVersion.Current.Version;
          
        </description>
        <summary>Easily get your apps version</summary>
-       <tags>xamarin, pcl, xam.pcl, plugin, plugin for xamarin, windows phone, winphone, wp8, winrt, android, xamarin.forms, ios</tags>
+       <tags>xamarin, pcl, xam.pcl, plugin, plugin for xamarin, android, xamarin.forms, ios</tags>
        <dependencies>
        </dependencies>
    </metadata>
@@ -66,18 +68,18 @@
      <file src="Version\Version.Plugin.Abstractions\bin\Release\Version.Plugin.Abstractions.xml" target="lib\MonoAndroid10\Version.Plugin.Abstractions.xml" />
      <file src="Version\Version.Plugin.Abstractions\bin\Release\Version.Plugin.Abstractions.pdb" target="lib\MonoAndroid10\Version.Plugin.Abstractions.pdb" />
 
-     <!--Xamarin.iOS-->
+     <!--Xamarin.iOS
      <file src="Version\Version.Plugin.iOS\bin\iPhone\Release\Version.Plugin.dll" target="lib\MonoTouch10\Version.Plugin.dll" />
      <file src="Version\Version.Plugin.iOS\bin\iPhone\Release\Version.Plugin.xml" target="lib\MonoTouch10\Version.Plugin.xml" />
      <file src="Version\Version.Plugin.Abstractions\bin\Release\Version.Plugin.Abstractions.dll" target="lib\MonoTouch10\Version.Plugin.Abstractions.dll" />
      <file src="Version\Version.Plugin.Abstractions\bin\Release\Version.Plugin.Abstractions.xml" target="lib\MonoTouch10\Version.Plugin.Abstractions.xml" />
-     
-     <!--Xamarin.iOS Unified
+     -->
+     <!--Xamarin.iOS Unified-->
      <file src="Version\Version.Plugin.iOSUnified\bin\iPhone\Release\Version.Plugin.dll" target="lib\Xamarin.iOS10\Version.Plugin.dll" />
      <file src="Version\Version.Plugin.iOSUnified\bin\iPhone\Release\Version.Plugin.xml" target="lib\Xamarin.iOS10\Version.Plugin.xml" />
      <file src="Version\Version.Plugin.Abstractions\bin\Release\Version.Plugin.Abstractions.dll" target="lib\Xamarin.iOS10\Version.Plugin.Abstractions.dll" />
      <file src="Version\Version.Plugin.Abstractions\bin\Release\Version.Plugin.Abstractions.xml" target="lib\Xamarin.iOS10\Version.Plugin.Abstractions.xml" />
--->
+
 
 
    </files>
